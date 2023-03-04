@@ -7,11 +7,12 @@
         <h1>Verificar maioridade</h1>
             <?php
                 $idade = $_GET['idadein'];
-                if ($idade > 18){
-                    echo "<h3>Maior de idade</h3>";
+                $nome = $_GET['nomein'];
+                if ($idade >= 18){
+                    echo $nome . " é maior de idade";
                 }
                 else{
-                    echo "<h3>Menor de idade</h3>";
+                    echo $nome . " é menor de idade";
                 }
 
             ?>
