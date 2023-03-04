@@ -4,11 +4,11 @@
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>Verificar maioridade</h1>
+        <h1>Verificar nota</h1>
         <form action="maioridade.php" method="get">
-            <p>Digite seu nome</p>
-            <input type="text" name="nomein"/>
-            <p>Digite sua idade</p>
-            <input type="text" name="idadein"/>
+            <p>Digite uma nota</p>
+            <input type="text" name="notain"/>
             <button type="submit" name="Enviar">Enviar</button>
         </form>
+    </body>
+</html>
