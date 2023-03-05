@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Verificar nota</h1>
-        <form action="maioridade.php" method="get">
+        <form action="nota.php" method="get">
             <p>Digite uma nota</p>
             <input type="text" name="notain"/>
             <button type="submit" name="Enviar">Enviar</button>
