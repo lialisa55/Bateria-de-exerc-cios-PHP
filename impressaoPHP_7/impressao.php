@@ -7,8 +7,7 @@
         <h1>Imprimindo 100 vezes 'PHP'</h1>
         <?php
             for ($i = 0; $i < 100; $i++){
-                echo $i;
-                echo "   "
+                echo $i . "<br/>";
             }
         ?>
     </body>
