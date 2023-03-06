@@ -6,7 +6,7 @@
     <body>
         <h1>Jogue jokenpô contra o computador</h1>
         <form action="jokenpo.php" method="get">
-            <p>Escolha pedra papel ou tesoura</p>
+            <p>Escolha pedra ('0') papel ('1') ou tesoura ('2')</p>
             <input type="text" name="userin"/>
             <button type="submit" name="Enviar">Enviar</button>
         </form>

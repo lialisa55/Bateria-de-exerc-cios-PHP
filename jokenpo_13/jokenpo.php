@@ -7,74 +7,78 @@
         <h1>Jogue jokenpô contra o computador</h1>
         <?php
             $user = strtolower($_GET['userin']);
-            $opcoes = array("pedra", "papel", "tesoura");
-            $comp = array_rand($opcoes, 1);
-
+            $comp = rand(0,2);
             switch($user){
-
-                case 'pedra':
-                    echo "<img src='style/pedra.png'/>";
+                case 0:
+                    echo "<img src='../style/pedra.png'/>";
                     switch($comp){
-                        case 'pedra':
-                            echo "<img src='style/pedra.png'/>";
+                        case 0:
+                            echo "<img src='../style/pedra.png'/> </br></br>";
                             echo "Empate";
                             break;
 
-                        case 'papel':
-                            echo "<img src='style/papel.png'/>";
+                        case 1:
+                            echo "<img src='../style/papel.png'/> </br></br>";
                             echo 'Computador ganhou';
                             break;
 
-                        case 'tesoura':
-                            echo "<image src='style/tesoura.png/>";
+                        case 2:
+                            echo "<image src='../style/tesoura.png'/> </br></br>";
                             echo "Você ganhou";
                             break;
                     }
+                    break;
 
-
-                case 'papel':
-                    echo "<img src='style/papel.png'/>";
+                case 1:
+                    echo "<img src='../style/papel.png'/>";
                     switch($comp){
-                        case 'pedra':
-                            echo "<img src='style/pedra.png'/>";
+                        case 0:
+                            echo "<img src='../style/pedra.png'/> </br></br>";
                             echo "Voce ganhou";
                             break;
 
-                        case 'papel':
-                            echo "<img src='style/papel.png'/>";
+                        case 1:
+                            echo "<img src='../style/papel.png'/> </br></br>";
                             echo 'Empate';
                             break;
 
-                        case 'tesoura':
-                            echo "<image src='style/tesoura.png/>";
+                        case 2:
+                            echo "<image src='../style/tesoura.png'/> </br></br>";
                             echo "Computador ganhou";
                             break;
                     }
+                    break;
 
-
-                case 'tesoura':
-                    echo "<img src='style/tesoura.png'/>";
+                case 2:
+                    echo "<img src='../style/tesoura.png'/>";
                     switch($comp){
-                        case 'pedra':
-                            echo "<img src='style/pedra.png'/>";
+                        case 0:
+                            echo "<img src='../style/pedra.png'/> </br></br>";
                             echo "Computador ganhou";
                             break;
 
-                        case 'papel':
-                            echo "<img src='style/papel.png'/>";
+                        case 1:
+                            echo "<img src='../style/papel.png'/> </br></br>";
                             echo 'Você ganhou';
                             break;
 
-                        case 'tesoura':
-                            echo "<image src='style/tesoura.png/>";
+                        case 2:
+                            echo "<image src='../style/tesoura.png'/> </br></br>";
                             echo "Empate";
                             break;
                     }
+                    break;
+
                 default:
-                    echo "O computador não entendeu sua jogada"
+                    echo "O computador não entendeu sua jogada";
                     break;
             }
         ?>
-        <button type='button' onclick='usuario.php'>Tentar novamente</button>
+        <?php 
+            echo "<br><br>";
+            echo "<a href='usuario.php'>voltar</a>";
+            echo "<br>";
+            echo "<a href='../index.php'>index</a>";
+        ?>
     </body>
 </html>

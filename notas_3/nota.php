@@ -11,9 +11,14 @@
                     echo " Nota aceita";
                 }
                 else{
-                    echo "Digite uma nota válida"
+                    echo "Digite uma nota válida";
                 }
-
+            ?>
+            <?php 
+                echo "<br><br>";
+                echo "<a href='usuario.php'>voltar</a>";
+                echo "<br>";
+                echo "<a href='../index.php'>index</a>";
             ?>
     </body>
 </html>

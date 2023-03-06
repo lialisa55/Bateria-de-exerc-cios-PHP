@@ -9,11 +9,17 @@
             $numuser = $_GET['numin'];
 
             if($numuser % 2 == 0){
-                echo "O número " . $numuser . " é par."
+                echo "O número " . $numuser . " é par.";
             }
             else{
-                echo "O número " . $numuser . " é impar"
+                echo "O número " . $numuser . " é impar";
             }
+        ?>
+        <?php 
+            echo "<br><br>";
+            echo "<a href='usuario.php'>voltar</a>";
+            echo "<br>";
+            echo "<a href='../index.php'>index</a>";
         ?>  
     </body>
 </html>

@@ -9,45 +9,51 @@
             $mes = $_GET['mesin'];
             switch($mes){
                 case 1:
-                    echo "janeiro"
+                    echo "janeiro";
                     break;
                 case 2:
-                    echo "fevereiro"
+                    echo "fevereiro";
                     break;
                 case 3:
-                    echo "março"
+                    echo "março";
                     break;
                 case 4:
-                    echo "abril"
+                    echo "abril";
                     break;
                 case 5:
-                    echo "maio"
+                    echo "maio";
                     break;
                 case 6:
-                    echo "junho"
+                    echo "junho";
                     break;
                 case 7:
-                    echo "julho"
+                    echo "julho";
                     break;
                 case 8:
-                    echo "agosto"
+                    echo "agosto";
                     break;
                 case 9:
-                    echo "setembro"
+                    echo "setembro";
                     break;
                 case 10:
-                    echo "outubro"
+                    echo "outubro";
                     break;
                 case 11:
-                    echo "novembro"
+                    echo "novembro";
                     break;
-                case 11:
-                    echo "dezembro"
+                case 12:
+                    echo "dezembro";
                     break;
                 default:
-                    echo "Não é um mês"
+                    echo "Não é um mês";
                     break;
             }
+        ?>
+        <?php 
+            echo "<br><br>";
+            echo "<a href='usuario.php'>voltar</a>";
+            echo "<br>"
+            echo "<a href='../index.php'>index</a>";
         ?>
     </body>
 </html>

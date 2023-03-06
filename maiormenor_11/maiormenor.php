@@ -9,15 +9,21 @@
                 $numA = $_GET['numUserA'];
                 $numB = $_GET['numUserB'];
                 if ($numA > $numB){
-                    echo "O número A é maior que B";
+                    echo "O número " . $numA .  " é maior que " . $numB;
                 }
                 elseif ($numB > $numA){
-                    echo $nome . "O número B é maior que A";
+                    echo "O número " . $numB .  " é maior que " . $numA;
                 }
                 else{
-                    echo "Eles são iguais"
+                    echo "O número " . $numA .  " é igual a " . $numB;
                 }
 
+            ?>
+            <?php 
+                echo "<br><br>";
+                echo "<a href='usuario.php'>voltar</a>";
+                echo "<br>";
+                echo "<a href='../index.php'>index</a>";
             ?>
     </body>
 </html>
